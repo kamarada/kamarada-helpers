@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metapackage xmlns:os="http://opensuse.org/Standards/One_Click_Install" xmlns="http://opensuse.org/Standards/One_Click_Install">
+  <group distversion="openSUSE 13.1">
+    <name>Opera</name>
+    <summary>Browser</summary>
+    <summary lang="pt_BR">Navegador</summary>
+    <description>Opera is user-friendly, secure, and exceptionally fast. The browser is small, yet full-featured and functions well on systems with limited resources. Opera supports all common Web standards and implements them according to the official recommendations.</description>
+    <description lang="pt_BR">Você deseja executar o Opera? No momento, ele não está instalado no seu computador, mas podemos instalá-lo. Observe que sua instalação removerá esse assistente, uma vez que ele não será mais necessário.
+
+O navegador Opera é amigável, seguro e excepcionalmente rápido. Ele é pequeno, mas completo, e funciona bem em computadores com recursos limitados. O Opera suporta todos os padrões da Web mais comuns e os implementa de acordo com as recomendações oficiais.
+
+Para mais informações, acesse http://www.opera.com
+
+Deseja proceder à instalação? Se sim, clique em "Próximo". Senão, clique em "Cancelar".</description>
+    <remainSubscribed>true</remainSubscribed>
+    <repositories>
+      <repository recommended="true" format="yast">
+        <name>openSUSE:13.1</name>
+        <summary>Official 13.1 openSUSE distribution</summary>
+	<summary lang="pt_BR">Distribuição oficial do openSUSE 13.1</summary>
+        <description>This project builds the official 13.1 openSUSE distribution.
+
+Have a look at http://en.opensuse.org/Portal:13.1 for more details.</description>
+	<description lang="pt_BR">Distribuição oficial do openSUSE 13.1.
+
+Para mais informações, acesse http://www.opensuse.org/pt-br/</description>
+	<!--<description lang="pt_BR">Distribuição oficial do openSUSE 13.1.
+
+Para mais informações, acesse http://www.opensuse.org/pt-br/
+
+Se você está no Brasil, habilite os repositórios da UFPR. Usar um servidor brasileiro, nesse caso, provavelmente agilizará o download dos pacotes.</description>-->
+        <url>http://download.opensuse.org/distribution/13.1/repo/oss/</url>
+	<!--<url location="br">http://opensuse.c3sl.ufpr.br/distribution/13.1/repo/oss/</url>-->
+      </repository>
+      <repository recommended="true" format="yum">
+        <name>openSUSE:13.1:Update</name>
+        <summary>Online updates for openSUSE 13.1</summary>
+	<summary lang="pt_BR">Atualizações online para o openSUSE 13.1</summary>
+        <description>This project is releasing the official updates for openSUSE 13.1.</description>
+	<description lang="pt_BR">Atualizações oficiais para o openSUSE 13.1</description>
+        <url>http://download.opensuse.org/update/13.1/</url>
+	<!--<url location="br">http://opensuse.c3sl.ufpr.br/update/13.1/</url>-->
+      </repository>
+      <repository recommended="true" format="yast">
+        <name>openSUSE:13.1:NonFree</name>
+        <summary>Non Free parts of openSUSE 13.1 distribution.</summary>
+	<summary lang="pt_BR">Componentes da distribuição openSUSE 13.1 que não são livres.</summary>
+        <description>Non free or non open source parts of openSUSE 13.1.</description>
+	<description lang="pt_BR">Componentes da distribuição openSUSE 13.1 que não são livres ou não possuem código aberto.</description>
+	<!--<description lang="pt_BR">Componentes da distribuição openSUSE 13.1 que não são livres ou não possuem código aberto.
+
+	Se você está no Brasil, habilite os repositórios da UFPR. Usar um servidor brasileiro, nesse caso, provavelmente agilizará o download dos pacotes.</description>-->
+        <url>http://download.opensuse.org/distribution/13.1/repo/non-oss/</url>
+	<!--<url location="br">http://opensuse.c3sl.ufpr.br/distribution/13.1/repo/non-oss/</url>-->
+      </repository>
+      <repository recommended="true" format="yum">
+        <name>openSUSE:13.1:NonFree:Update</name>
+        <summary>Online updates for openSUSE 13.1 NonFree</summary>
+	<summary lang="pt_BR">Atualizações online para os componentes não livres do openSUSE 13.1</summary>
+        <url>http://download.opensuse.org/update/13.1-non-oss/</url>
+	<!--<url location="br">http://opensuse.c3sl.ufpr.br/update/13.1-non-oss/</url>-->
+      </repository>
+    </repositories>
+    <software>
+      <item recommended="true">
+        <name>opera</name>
+        <summary>Opera Web Browser</summary>
+	<summary lang="pt_BR">Navegador da Web Opera</summary>
+        <description>Opera is user-friendly, secure, and exceptionally fast. The browser is small, yet full-featured and functions well on systems with limited resources. Opera supports all common Web standards and implements them according to the official recommendations.</description>
+	<description lang="pt_BR">O navegador Opera é amigável, seguro e excepcionalmente rápido. Ele é pequeno, mas completo, e funciona bem em computadores com recursos limitados. O Opera suporta todos os padrões da Web mais comuns e os implementa de acordo com as recomendações oficiais.</description>
+      </item>
+      <item recommended="true">
+        <name>opera-kde4</name>
+        <summary>Opera KDE4 engine</summary>
+	<summary lang="pt_BR">Mecanismo do Opera para o KDE 4</summary>
+        <description>Opera engine for KDE4 integration</description>
+	<description lang="pt_BR">Mecanismo de integração do Opera com o KDE4</description>
+      </item>
+      <item action="remove" recommended="true">
+        <name>kamarada-helpers-opera</name>
+        <summary>Kamarada helper for installing the Opera Browser</summary>
+	<summary lang="pt_BR">Assistente do Kamarada para instalar o Navegador Opera</summary>
+        <description>Kamarada helper for installing the Opera Browser</description>
+	<description lang="pt_BR">Assistente do Kamarada para instalar o Navegador Opera</description>
+      </item>
+    </software>
+  </group>
+</metapackage>

@@ -1,0 +1,17 @@
+[Desktop Entry]
+Categories=Network;WebBrowser;Qt;
+Encoding=UTF-8
+Name=Opera Browser (not installed yet, click if you want to install it)
+Name[pt_BR]=Navegador Opera (não instalado, clique se quiser instalar)
+# Name=Opera (not installed yet, click if you want to install it)
+# Name[pt_BR]=Opera (não instalado, clique se quiser instalar)
+# GenericName=Browser
+# GenericName[pt_BR]=Navegador
+# Comment=Browser
+# Comment[pt_BR]=Navegador
+TryExec=opera
+Exec=opera
+Icon=kamarada_helper
+Terminal=false
+StartupNotify=false
+Type=Application

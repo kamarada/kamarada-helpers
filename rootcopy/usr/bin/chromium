@@ -1,0 +1,8 @@
+#!/bin/bash
+
+NAME="Chromium"
+DESCRIPTION="Chromium é o projeto de código aberto por trás do Google Chrome. O objetivo do projeto é prover uma experiência mais segura, rápida e estável para todos os internautas, e criar uma poderosa plataforma para suportar uma nova geração de aplicações web."
+WEBSITE="http://www.chromium.org/"
+ONE_CLICK="/usr/share/Kamarada/helpers/chromium.ymp"
+
+source /usr/share/Kamarada/helpers/common

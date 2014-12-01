@@ -1,0 +1,27 @@
+#!/bin/bash
+
+WELCOME_MESSAGE="Você deseja executar o $NAME? No momento, ele não está instalado no seu computador, mas podemos instalá-lo. Observe que sua instalação removerá esse assistente, uma vez que ele não será mais necessário.\n\n$DESCRIPTION\n\nPara mais informações, acesse $WEBSITE"
+PROMPT="Deseja proceder à instalação? Se sim, pressione qualquer tecla para continuar. Senão, pressione Ctrl + C. "
+PRIVILEGES_WARNING="Para continuar, você precisa de privilégios de administrador. Forneça a senha do administrador e pressione Enter, ou pressione Ctrl + C para cancelar."
+
+# Check if we have $DISPLAY set
+# http://stackoverflow.com/questions/307503/whats-the-best-way-to-check-that-environment-variables-are-set-in-unix-shellscr
+if [[ -z "$DISPLAY" ]]; then
+  # Terminal
+  echo -en "\n$WELCOME_MESSAGE\n\n"
+  read -n 1 -p "$PROMPT"
+  # Make sure only root can continue on this script
+  # http://www.cyberciti.biz/tips/shell-root-user-check-script.html
+  if [[ $EUID -ne 0 ]]; then
+    sudo -K
+    echo -en "\n$PRIVILEGES_WARNING\n\n"
+  fi
+  sudo /sbin/OneClickInstallCLI "$ONE_CLICK"
+else
+  # GUI
+  /sbin/OneClickInstallUI "$ONE_CLICK"
+fi
+
+# Exit status of the last command executed
+# http://tldp.org/LDP/abs/html/exit-status.html
+exit $?

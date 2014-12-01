@@ -1,0 +1,12 @@
+#########
+# Linux #
+#########
+
+*~
+.directory
+
+##################
+# Compiled files #
+##################
+
+rootcopy.tar.gz

@@ -1,0 +1,18 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Categories=Network;WebBrowser;
+Encoding=UTF-8
+Name=Chromium Web Browser (not installed yet, click if you want to install it)
+Name[pt_BR]=Navegador da web Chromium (não instalado, clique se quiser instalar)
+# Name=Chromium Web Browser (not installed yet, click if you want to install it)
+# Name[pt_BR]=Navegador da web Chromium (não instalado, clique se quiser instalar)
+# GenericName=Web Browser
+# GenericName[pt_BR]=Navegador da web
+# Comment=Web Browser
+# Comment[pt_BR]=Navegador da web
+TryExec=chromium
+Exec=chromium
+Icon=Kamarada_helper
+Terminal=false
+StartupNotify=false
+Type=Application

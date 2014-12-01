@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metapackage xmlns:os="http://opensuse.org/Standards/One_Click_Install" xmlns="http://opensuse.org/Standards/One_Click_Install">
+  <group distversion="openSUSE 13.2">
+    <name>Chromium</name>
+    <summary>Web Browser</summary>
+    <summary lang="pt_BR">Navegador da web</summary>
+    <description>Chromium is the open-source project behind Google Chrome. We invite you to join us in our effort to help build a safer, faster, and more stable way for all Internet users to experience the web, and to create a powerful platform for developing a new generation of web applications.</description>
+    <description lang="pt_BR">Você deseja executar o Chromium? No momento, ele não está instalado no seu computador, mas podemos instalá-lo. Observe que sua instalação removerá esse assistente, uma vez que ele não será mais necessário.
+
+Chromium é o projeto de código aberto por trás do Google Chrome. O objetivo do projeto é prover uma experiência mais segura, rápida e estável para todos os internautas, e criar uma poderosa plataforma para suportar uma nova geração de aplicações web.
+
+Para mais informações, acesse http://www.chromium.org/
+
+Deseja proceder à instalação? Se sim, clique em "Próximo". Senão, clique em "Cancelar".</description>
+    <remainSubscribed>true</remainSubscribed>
+    <repositories>
+      <repository recommended="true" format="yast">
+        <name>openSUSE:13.2</name>
+        <summary>Official 13.2 openSUSE distribution</summary>
+	<summary lang="pt_BR">Distribuição oficial do openSUSE 13.2</summary>
+        <description>This project builds the official 13.2 openSUSE distribution.
+
+Have a look at http://en.opensuse.org/Portal:13.2 for more details.</description>
+	<description lang="pt_BR">Distribuição oficial do openSUSE 13.2.
+
+Para mais informações, acesse http://www.opensuse.org/pt-br/</description>
+	<!--<description lang="pt_BR">Distribuição oficial do openSUSE 13.2.
+
+Para mais informações, acesse http://www.opensuse.org/pt-br/
+
+Se você está no Brasil, habilite os repositórios da UFPR. Usar um servidor brasileiro, nesse caso, provavelmente agilizará o download dos pacotes.</description>-->
+        <url>http://download.opensuse.org/distribution/13.2/repo/oss/</url>
+	<!--<url location="br">http://opensuse.c3sl.ufpr.br/distribution/13.2/repo/oss/</url>-->
+      </repository>
+      <repository recommended="true" format="yum">
+        <name>openSUSE:13.2:Update</name>
+        <summary>Online updates for openSUSE 13.2</summary>
+	<summary lang="pt_BR">Atualizações online para o openSUSE 13.2</summary>
+        <description>This project is releasing the official updates for openSUSE 13.2.</description>
+	<description lang="pt_BR">Atualizações oficiais para o openSUSE 13.2</description>
+        <url>http://download.opensuse.org/update/13.2/</url>
+	<!--<url location="br">http://opensuse.c3sl.ufpr.br/update/13.2/</url>-->
+      </repository>
+    </repositories>
+    <software>
+      <item recommended="true">
+        <name>chromium</name>
+        <summary>Google's opens source browser project</summary>
+	<summary lang="pt_BR">Navegador de código aberto do Google</summary>
+        <description>Chromium is the open-source project behind Google Chrome. We invite you to join us in our effort to help build a safer, faster, and more stable way for all Internet users to experience the web, and to create a powerful platform for developing a new generation of web applications.</description>
+	<description lang="pt_BR">Chromium é o projeto de código aberto por trás do Google Chrome. O objetivo do projeto é prover uma experiência mais segura, rápida e estável para todos os internautas, e criar uma poderosa plataforma para suportar uma nova geração de aplicações web.</description>
+      </item>
+      <item recommended="true">
+        <name>chromium-desktop-kde</name>
+        <summary>Update to chromium to use KDE's kwallet to store passwords</summary>
+	<summary lang="pt_BR">Atualização para o Chromium utilizar a Carteira do KDE para salvar senhas</summary>
+        <description>By using the openSUSE update-alternatives the password store for Chromium is changed to utilize KDE's kwallet. Please be aware that by this change the old password are no longer accessible and are also not converted to kwallet.</description>
+	<description lang="pt_BR">Através do comando update-alternatives do openSUSE, o local onde o Chromium armazena as senhas é alterado para a Carteira do KDE. Note que, se você possui senhas armazenadas, essa mudança não as passa para a Carteira do KDE e elas não poderão mais ser acessadas.</description>
+      </item>
+      <item recommended="false">
+        <name>chromium-desktop-gnome</name>
+        <summary>Update to chromium to use Gnome keyring to store passwords</summary>
+	<summary lang="pt_BR">Atualização para o Chromium utilizar o Chaveiro do Gnome para salvar senhas</summary>
+        <description>By using the openSUSE update-alternatives the password store for Chromium is changed to utilize Gnome's Keyring. Please be aware that by this change the old password are no longer accessible and are also not converted to Gnome's Keyring.</description>
+	<description lang="pt_BR">Através do comando update-alternatives do openSUSE, o local onde o Chromium armazena as senhas é alterado para o Chaveiro do Gnome. Note que, se você possui senhas armazenadas, essa mudança não as passa para o Chaveiro do Gnome e elas não poderão mais ser acessadas.</description>
+      </item>
+      <item recommended="true">
+        <name>chromium-ffmpegsumo</name>
+        <summary>Library to provide ffmpeg support to Chromium</summary>
+	<summary lang="pt_BR">Biblioteca que provê suporte ao ffmpeg para o Chromium</summary>
+        <description>This is the multimedia codec library for Chromium. It is based on the internal ffmpeg source code and contains only the open source codecs from ffmpeg. Proprietary codecs (e.g. H.264) are not part of this library, but are provided in an external package</description>
+	<description lang="pt_BR">Esta é a biblioteca de codecs multimídia para o Chromium. Ela é baseada no código fonte do ffmpeg e contém apenas seus codecs de código aberto. Codecs proprietários (como, por exemplo, o H.264) não fazem parte dessa biblioteca, mas estão disponíveis em outro pacote.</description>
+      </item>
+      <item action="remove" recommended="true">
+        <name>Kamarada-helpers-chromium</name>
+        <summary>Kamarada helper for installing the Chromium Web Browser</summary>
+	<summary lang="pt_BR">Assistente do Kamarada para instalar o Navegador da web Chromium</summary>
+        <description>Kamarada helpers assist users installing softwares that aren't bundled with Kamarada by default, but probably they will look for.
+
+This helper assists installing the Chromium Web Browser.</description>
+	<description lang="pt_BR">Os assistentes do Kamarada ajudam os usuários a instalar programas que não são fornecidos com o Kamarada por padrão, mas que provavelmente eles estão à procura.
+
+Esse assistente ajuda a instalar o Navegador da web Chromium.</description>
+      </item>
+    </software>
+  </group>
+</metapackage>

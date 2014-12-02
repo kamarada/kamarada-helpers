@@ -51,6 +51,7 @@ tar -zxvf %{SOURCE1} -C rootcopy
 %install
 cp -R $RPM_BUILD_DIR/rootcopy/* $RPM_BUILD_ROOT
 %suse_update_desktop_file Kamarada-helpers-chromium
+%suse_update_desktop_file Kamarada-helpers-google-chrome
 
 
 %files
@@ -82,3 +83,28 @@ This helper assists installing the Chromium Web Browser.
 /usr/bin/chromium
 /usr/share/applications/Kamarada-helpers-chromium.desktop
 /usr/share/Kamarada/helpers/chromium.ymp
+
+
+%package google-chrome
+Summary:        Kamarada helper for installing the Google Chrome Web Browser
+Group:          Metapackages
+Requires:       Kamarada-helpers
+
+Conflicts:      google-chrome-stable
+Conflicts:      google-chrome-beta
+Conflicts:      google-chrome-unstable
+
+
+%description google-chrome
+Kamarada helpers assist users installing softwares that aren't bundled with Kamarada by default, but probably they will look for.
+
+This helper assists installing the Google Chrome Web Browser.
+
+
+%files google-chrome
+%defattr(-,root,root)
+%doc COPYING
+/usr/bin/google-chrome-stable
+/usr/share/applications/Kamarada-helpers-google-chrome.desktop
+/usr/share/Kamarada/helpers/google-chrome-stable-i386.ymp
+/usr/share/Kamarada/helpers/google-chrome-stable-x86_64.ymp

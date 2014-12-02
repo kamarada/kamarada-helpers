@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metapackage xmlns:os="http://opensuse.org/Standards/One_Click_Install" xmlns="http://opensuse.org/Standards/One_Click_Install">
+  <group distversion="openSUSE 13.2">
+    <name>Google Chrome</name>
+    <summary>Web Browser</summary>
+    <summary lang="pt_BR">Navegador da Internet</summary>
+    <description>The web browser from Google.
+
+Google Chrome is a browser that combines a minimal design with sophisticated technology to make the web faster, safer, and easier.</description>
+    <description lang="pt_BR">Você deseja executar o Google Chrome? No momento, ele não está instalado no seu computador, mas podemos instalá-lo. Observe que sua instalação removerá esse assistente, uma vez que ele não será mais necessário.
+
+O Google Chrome é um navegador que combina um design mínimo com tecnologia sofisticada para tornar a Internet mais rápida, segura e fácil.
+
+Para mais informações, acesse http://www.google.com/chrome/
+
+Deseja proceder à instalação? Se sim, clique em "Próximo". Senão, clique em "Cancelar".</description>
+    <remainSubscribed>true</remainSubscribed>
+    <repositories>
+      <repository recommended="true" format="yast">
+        <name>openSUSE:13.2</name>
+        <summary>Official 13.2 openSUSE distribution</summary>
+	<summary lang="pt_BR">Distribuição oficial do openSUSE 13.2</summary>
+        <description>This project builds the official 13.2 openSUSE distribution.
+
+Have a look at http://en.opensuse.org/Portal:13.2 for more details.</description>
+	<description lang="pt_BR">Distribuição oficial do openSUSE 13.2.
+
+Para mais informações, acesse http://www.opensuse.org/pt-br/</description>
+        <url>http://download.opensuse.org/distribution/13.2/repo/oss/</url>
+      </repository>
+      <repository recommended="true" format="yum">
+        <name>openSUSE:13.2:Update</name>
+        <summary>Online updates for openSUSE 13.2</summary>
+	<summary lang="pt_BR">Atualizações online para o openSUSE 13.2</summary>
+        <description>This project is releasing the official updates for openSUSE 13.2.</description>
+	<description lang="pt_BR">Atualizações oficiais para o openSUSE 13.2</description>
+        <url>http://download.opensuse.org/update/13.2/</url>
+      </repository>
+      <repository recommended="true" format="yum">
+        <name>Google-Chrome</name>
+        <summary>Google Chrome i386 official repository</summary>
+	<summary lang="pt_BR">Repositório oficial do Google Chrome i386 (32 bits)</summary>
+        <description>Google Chrome i386 official repository</description>
+	<description lang="pt_BR">Repositório oficial do Google Chrome i386 (32 bits)</description>
+        <url>http://dl.google.com/linux/chrome/rpm/stable/i386</url>
+      </repository>
+    </repositories>
+    <software>
+      <item recommended="true">
+        <name>google-chrome-stable</name>
+        <summary>Google Chrome</summary>
+	<summary lang="pt_BR">Google Chrome</summary>
+        <description>The web browser from Google.
+
+Google Chrome is a browser that combines a minimal design with sophisticated technology to make the web faster, safer, and easier.</description>
+	<description lang="pt_BR">O navegador da Internet do Google.
+
+O Google Chrome é um navegador que combina um design mínimo com tecnologia sofisticada para tornar a Internet mais rápida, segura e fácil.</description>
+      </item>
+      <item action="remove" recommended="true">
+        <name>Kamarada-helpers-google-chrome</name>
+        <summary>Kamarada helper for installing the Google Chrome Web Browser</summary>
+	<summary lang="pt_BR">Assistente do Kamarada para instalar o Navegador da Internet Google Chrome</summary>
+        <description>Kamarada helpers assist users installing softwares that aren't bundled with Kamarada by default, but probably they will look for.
+
+This helper assists installing the Google Chrome Web Browser.</description>
+	<description lang="pt_BR">Os assistentes do Kamarada ajudam os usuários a instalar programas que não são fornecidos com o Kamarada por padrão, mas que provavelmente eles estão à procura.
+
+Esse assistente ajuda a instalar o Navegador da Internet Google Chrome.</description>
+      </item>
+    </software>
+  </group>
+</metapackage>

@@ -1,0 +1,17 @@
+#!/bin/bash
+
+NAME="Google Chrome"
+DESCRIPTION="O Google Chrome é um navegador que combina um design mínimo com tecnologia sofisticada para tornar a Internet mais rápida, segura e fácil."
+WEBSITE="http://www.google.com.br/chrome/"
+ONE_CLICK="/usr/share/Kamarada/helpers"
+
+ARCH=`uname -m`
+
+if [[ "$ARCH" == "x86_64" ]];
+then
+    ONE_CLICK="$ONE_CLICK/google-chrome-stable-x86_64.ymp"
+else
+    ONE_CLICK="$ONE_CLICK/google-chrome-stable-i386.ymp"
+fi
+
+source /usr/share/Kamarada/helpers/common

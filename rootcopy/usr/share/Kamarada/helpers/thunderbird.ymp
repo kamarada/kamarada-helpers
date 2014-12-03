@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metapackage xmlns:os="http://opensuse.org/Standards/One_Click_Install" xmlns="http://opensuse.org/Standards/One_Click_Install">
+  <group distversion="openSUSE 13.2">
+    <name>Mozilla Thunderbird</name>
+    <summary>Mail/News Client</summary>
+    <summary lang="pt_BR">Cliente de e-mail/notícias</summary>
+    <description>Mozilla Thunderbird is a redesign of the Mozilla Mail component. It is written using the XUL user interface language and designed to be cross-platform. It is a stand-alone application instead of part of the Mozilla application suite.</description>
+    <description lang="pt_BR">Você deseja executar o Mozilla Thunderbird? No momento, ele não está instalado no seu computador, mas podemos instalá-lo. Observe que sua instalação removerá esse assistente, uma vez que ele não será mais necessário.
+
+O Mozilla Thunderbird é um redesenho do componente de e-mail da Mozilla. Ele é desenvolvido utilizando a linguagem de interface do usuário XUL e projetado para ser multi-plataforma. É um aplicativo independente, e não faz parte da suíte de aplicativos Mozilla.
+
+Para mais informações, acesse https://www.mozilla.org/thunderbird/
+
+Deseja proceder à instalação? Se sim, clique em "Próximo". Senão, clique em "Cancelar".</description>
+    <remainSubscribed>true</remainSubscribed>
+    <repositories>
+      <repository recommended="true" format="yast">
+        <name>openSUSE:13.2</name>
+        <summary>Official 13.2 openSUSE distribution</summary>
+	<summary lang="pt_BR">Distribuição oficial do openSUSE 13.2</summary>
+        <description>This project builds the official 13.2 openSUSE distribution.
+
+Have a look at http://en.opensuse.org/Portal:13.2 for more details.</description>
+	<description lang="pt_BR">Distribuição oficial do openSUSE 13.2.
+
+Para mais informações, acesse http://www.opensuse.org/pt-br/</description>
+        <url>http://download.opensuse.org/distribution/13.2/repo/oss/</url>
+      </repository>
+      <repository recommended="true" format="yum">
+        <name>openSUSE:13.2:Update</name>
+        <summary>Online updates for openSUSE 13.2</summary>
+	<summary lang="pt_BR">Atualizações online para o openSUSE 13.2</summary>
+        <description>This project is releasing the official updates for openSUSE 13.2.</description>
+	<description lang="pt_BR">Atualizações oficiais para o openSUSE 13.2</description>
+        <url>http://download.opensuse.org/update/13.2/</url>
+      </repository>
+    </repositories>
+    <software>
+      <item recommended="true">
+        <name>MozillaThunderbird</name>
+        <summary>Mozilla Thunderbird - The Stand-Alone Mozilla Mail Component</summary>
+	<summary lang="pt_BR">Mozilla Thunderbird - o componente de e-mail independente da Mozilla</summary>
+        <description>Mozilla Thunderbird is a redesign of the Mozilla Mail component. It is written using the XUL user interface language and designed to be cross-platform. It is a stand-alone application instead of part of the Mozilla application suite.</description>
+	<description lang="pt_BR">O Mozilla Thunderbird é um redesenho do componente de e-mail da Mozilla. Ele é desenvolvido utilizando a linguagem de interface do usuário XUL e projetado para ser multi-plataforma. É um aplicativo independente, e não parte da suíte de aplicativos Mozilla.</description>
+      </item>
+      <item recommended="true">
+        <name>MozillaThunderbird-translations-common</name>
+        <summary>Common translations for Mozilla Thunderbird</summary>
+	<summary lang="pt_BR">Traduções comuns para o Mozilla Thunderbird</summary>
+        <description>This package contains several optional languages for the user interface of Mozilla Thunderbird.</description>
+	<description lang="pt_BR">Esse pacote contém diversas traduções para a interface de usuário do Mozilla Thunderbird, inclusive uma tradução para o Português brasileiro.</description>
+      </item>
+      <item recommended="false">
+        <name>MozillaThunderbird-translations-other</name>
+        <summary>Extra translations for MozillaThunderbird</summary>
+	<summary lang="pt_BR">Traduções adicionais para o Mozilla Thunderbird</summary>
+        <description>This package contains several optional languages for the user interface of MozillaThunderbird</description>
+	<description lang="pt_BR">Esse pacote contém diversas traduções para a interface de usuário do Mozilla Thunderbird.</description>
+      </item>
+      <item action="remove" recommended="true">
+        <name>Kamarada-helpers-thunderbird</name>
+        <summary>Kamarada helper for installing the Mozilla Thunderbird</summary>
+	<summary lang="pt_BR">Assistente do Kamarada para instalar o Mozilla Thunderbird</summary>
+        <description>Kamarada helpers assist users installing softwares that aren't bundled with Kamarada by default, but probably they will look for.
+
+This helper assists installing the Mozilla Thunderbird Mail/News Client.</description>
+	<description lang="pt_BR">Os assistentes do Kamarada ajudam os usuários a instalar programas que não são fornecidos com o Kamarada por padrão, mas que provavelmente eles estão à procura.
+
+Esse assistente ajuda a instalar o cliente de e-mail/notícias Mozilla Thunderbird.</description>
+      </item>
+    </software>
+  </group>
+</metapackage>

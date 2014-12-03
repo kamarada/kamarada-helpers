@@ -52,6 +52,7 @@ tar -zxvf %{SOURCE1} -C rootcopy
 cp -R $RPM_BUILD_DIR/rootcopy/* $RPM_BUILD_ROOT
 %suse_update_desktop_file Kamarada-helpers-chromium
 %suse_update_desktop_file Kamarada-helpers-google-chrome
+%suse_update_desktop_file Kamarada-helpers-thunderbird
 
 
 %files
@@ -108,3 +109,34 @@ This helper assists installing the Google Chrome Web Browser.
 /usr/share/applications/Kamarada-helpers-google-chrome.desktop
 /usr/share/Kamarada/helpers/google-chrome-stable-i386.ymp
 /usr/share/Kamarada/helpers/google-chrome-stable-x86_64.ymp
+
+
+%post google-chrome
+update-alternatives --install "/usr/bin/google-chrome" "google-chrome" "/usr/bin/google-chrome-stable" 1
+update-alternatives --set "google-chrome" "/usr/bin/google-chrome-stable"
+
+
+%postun google-chrome
+update-alternatives --remove "google-chrome" "/usr/bin/google-chrome-stable"
+
+
+%package thunderbird
+Summary:        Kamarada helper for installing the Mozilla Thunderbird Mail/News Client
+Group:          Metapackages
+Requires:       Kamarada-helpers
+
+Conflicts:      MozillaThunderbird
+
+
+%description thunderbird
+Kamarada helpers assist users installing softwares that aren't bundled with Kamarada by default, but probably they will look for.
+
+This helper assists installing the Mozilla Thunderbird Mail/News Client.
+
+
+%files thunderbird
+%defattr(-,root,root)
+%doc COPYING
+/usr/bin/thunderbird
+/usr/share/applications/Kamarada-helpers-thunderbird.desktop
+/usr/share/Kamarada/helpers/thunderbird.ymp

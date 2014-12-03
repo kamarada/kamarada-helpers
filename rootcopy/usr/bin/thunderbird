@@ -1,0 +1,8 @@
+#!/bin/bash
+
+NAME="Mozilla Thunderbird"
+DESCRIPTION="O Mozilla Thunderbird é um redesenho do componente de e-mail da Mozilla. Ele é desenvolvido utilizando a linguagem de interface do usuário XUL e projetado para ser multi-plataforma. É um aplicativo independente, e não faz parte da suíte de aplicativos Mozilla."
+WEBSITE="https://www.mozilla.org/thunderbird/"
+ONE_CLICK="/usr/share/Kamarada/helpers/thunderbird.ymp"
+
+source /usr/share/Kamarada/helpers/common

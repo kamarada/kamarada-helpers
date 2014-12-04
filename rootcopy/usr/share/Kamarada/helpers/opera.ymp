@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metapackage xmlns:os="http://opensuse.org/Standards/One_Click_Install" xmlns="http://opensuse.org/Standards/One_Click_Install">
+  <group distversion="openSUSE 13.2">
+    <name>Opera</name>
+    <summary>Web Browser</summary>
+    <summary lang="pt_BR">Navegador</summary>
+    <description>Opera is user-friendly, secure, and exceptionally fast. The browser is small, yet full-featured and functions well on systems with limited resources. Opera supports all common Web standards and implements them according to the official recommendations.</description>
+    <description lang="pt_BR">Você deseja executar o Opera? No momento, ele não está instalado no seu computador, mas podemos instalá-lo. Observe que sua instalação removerá esse assistente, uma vez que ele não será mais necessário.
+
+O navegador Opera é amigável, seguro e excepcionalmente rápido. Ele é pequeno, mas completo, e funciona bem em computadores com recursos limitados. O Opera suporta todos os padrões da Web mais comuns e os implementa de acordo com as recomendações oficiais.
+
+Para mais informações, acesse http://www.opera.com/
+
+Deseja proceder à instalação? Se sim, clique em "Próximo". Senão, clique em "Cancelar".</description>
+    <remainSubscribed>true</remainSubscribed>
+    <repositories>
+      <repository recommended="true" format="yast">
+        <name>openSUSE:13.2</name>
+        <summary>Official 13.2 openSUSE distribution</summary>
+	<summary lang="pt_BR">Distribuição oficial do openSUSE 13.2</summary>
+        <description>This project builds the official 13.2 openSUSE distribution.
+
+Have a look at http://en.opensuse.org/Portal:13.2 for more details.</description>
+	<description lang="pt_BR">Distribuição oficial do openSUSE 13.2.
+
+Para mais informações, acesse http://www.opensuse.org/pt-br/</description>
+        <url>http://download.opensuse.org/distribution/13.2/repo/oss/</url>
+      </repository>
+      <repository recommended="true" format="yum">
+        <name>openSUSE:13.2:Update</name>
+        <summary>Online updates for openSUSE 13.2</summary>
+	<summary lang="pt_BR">Atualizações online para o openSUSE 13.2</summary>
+        <description>This project is releasing the official updates for openSUSE 13.2.</description>
+	<description lang="pt_BR">Atualizações oficiais para o openSUSE 13.2</description>
+        <url>http://download.opensuse.org/update/13.2/</url>
+      </repository>
+      <repository recommended="true" format="yum">
+	<name>home:kamarada:opera</name>
+        <summary>Opera Web Browser</summary>
+	<summary lang="pt_BR">Componentes da distribuição openSUSE 13.2 que não são livres.</summary>
+        <description>This project aims to package the Opera Web Browser for Kamarada and openSUSE Linux distributions</description>
+	<description lang="pt_BR">Esse projeto visa empacotar o Navegador Opera para as distribuições Linux Kamarada e openSUSE</description>
+        <url>http://download.opensuse.org/repositories/home:/kamarada:/opera/openSUSE_13.2/</url>
+      </repository>
+    </repositories>
+    <software>
+      <item recommended="true">
+        <name>opera</name>
+        <summary>Opera Web Browser</summary>
+	<summary lang="pt_BR">Navegador da Web Opera</summary>
+        <description>Opera is user-friendly, secure, and exceptionally fast. The browser is small, yet full-featured and functions well on systems with limited resources. Opera supports all common Web standards and implements them according to the official recommendations.</description>
+	<description lang="pt_BR">O navegador Opera é amigável, seguro e excepcionalmente rápido. Ele é pequeno, mas completo, e funciona bem em computadores com recursos limitados. O Opera suporta todos os padrões da Web mais comuns e os implementa de acordo com as recomendações oficiais.</description>
+      </item>
+      <item recommended="true">
+        <name>opera-kde4</name>
+        <summary>Opera KDE4 engine</summary>
+	<summary lang="pt_BR">Mecanismo do Opera para o KDE 4</summary>
+        <description>Opera engine for KDE4 integration</description>
+	<description lang="pt_BR">Mecanismo de integração do Opera com o KDE4</description>
+      </item>
+      <item recommended="false">
+        <name>opera-gtk</name>
+        <summary>Opera GTK engine</summary>
+	<summary lang="pt_BR">Mecanismo do Opera para o GTK</summary>
+        <description>Opera engine for GTK integration</description>
+	<description lang="pt_BR">Mecanismo de integração do Opera com o GTK</description>
+      </item>
+      <item action="remove" recommended="true">
+        <name>Kamarada-helpers-opera</name>
+        <summary>Kamarada helper for installing the Opera Web Browser</summary>
+	<summary lang="pt_BR">Assistente do Kamarada para instalar o Navegador Opera</summary>
+        <description>Kamarada helpers assist users installing softwares that aren't bundled with Kamarada by default, but probably they will look for.
+
+This helper assists installing the Opera Web Browser.</description>
+	<description lang="pt_BR">Os assistentes do Kamarada ajudam os usuários a instalar programas que não são fornecidos com o Kamarada por padrão, mas que provavelmente eles estão à procura.
+
+Esse assistente ajuda a instalar o Navegador Opera.</description>
+      </item>
+    </software>
+  </group>
+</metapackage>

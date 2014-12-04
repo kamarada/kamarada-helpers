@@ -52,6 +52,7 @@ tar -zxvf %{SOURCE1} -C rootcopy
 cp -R $RPM_BUILD_DIR/rootcopy/* $RPM_BUILD_ROOT
 %suse_update_desktop_file Kamarada-helpers-chromium
 %suse_update_desktop_file Kamarada-helpers-google-chrome
+%suse_update_desktop_file Kamarada-helpers-opera
 %suse_update_desktop_file Kamarada-helpers-thunderbird
 
 
@@ -118,6 +119,28 @@ update-alternatives --set "google-chrome" "/usr/bin/google-chrome-stable"
 
 %postun google-chrome
 update-alternatives --remove "google-chrome" "/usr/bin/google-chrome-stable"
+
+
+%package opera
+Summary:        Kamarada helper for installing the Opera Web Browser
+Group:          Metapackages
+Requires:       Kamarada-helpers
+
+Conflicts:      opera
+
+
+%description opera
+Kamarada helpers assist users installing softwares that aren't bundled with Kamarada by default, but probably they will look for.
+
+This helper assists installing the Opera Web Browser.
+
+
+%files opera
+%defattr(-,root,root)
+%doc COPYING
+/usr/bin/opera
+/usr/share/applications/Kamarada-helpers-opera.desktop
+/usr/share/Kamarada/helpers/opera.ymp
 
 
 %package thunderbird

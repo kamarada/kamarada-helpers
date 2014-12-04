@@ -2,8 +2,8 @@
 [Desktop Entry]
 Categories=Network;Email;GTK;
 Encoding=UTF-8
-Name=Thunderbird Mail/News Client (not installed yet, click if you want to install it)
-Name[pt_BR]=Cliente de e-mail/notícias Thunderbird (não instalado, clique se quiser instalar)
+Name=Thunderbird Mail/News Client (not installed yet, click to install it)
+Name[pt_BR]=Cliente de e-mail/notícias Thunderbird (não instalado, clique para instalar)
 TryExec=thunderbird
 Exec=thunderbird
 Icon=Kamarada_helper

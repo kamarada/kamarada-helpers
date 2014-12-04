@@ -1,0 +1,8 @@
+#!/bin/bash
+
+NAME="Opera"
+DESCRIPTION="O navegador Opera é amigável, seguro e excepcionalmente rápido. Ele é pequeno, mas completo, e funciona bem em computadores com recursos limitados. O Opera suporta todos os padrões da Web mais comuns e os implementa de acordo com as recomendações oficiais."
+WEBSITE="http://www.opera.com"
+ONE_CLICK="/usr/share/Kamarada/helpers/opera.ymp"
+
+source /usr/share/Kamarada/helpers/common

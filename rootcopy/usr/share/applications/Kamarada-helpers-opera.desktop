@@ -1,0 +1,12 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Categories=Network;WebBrowser;Qt;
+Encoding=UTF-8
+Name=Opera Web browser (not installed yet, click to install it)
+Name[pt_BR]=Navegador Opera (não instalado, clique para instalar)
+TryExec=opera
+Exec=opera
+Icon=Kamarada_helper
+Terminal=false
+StartupNotify=false
+Type=Application

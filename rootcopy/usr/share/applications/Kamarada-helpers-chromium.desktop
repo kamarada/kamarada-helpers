@@ -2,8 +2,8 @@
 [Desktop Entry]
 Categories=Network;WebBrowser;
 Encoding=UTF-8
-Name=Chromium Web Browser (not installed yet, click if you want to install it)
-Name[pt_BR]=Navegador da web Chromium (não instalado, clique se quiser instalar)
+Name=Chromium Web Browser (not installed yet, click to install it)
+Name[pt_BR]=Navegador da web Chromium (não instalado, clique para instalar)
 # Name=Chromium Web Browser (not installed yet, click if you want to install it)
 # Name[pt_BR]=Navegador da web Chromium (não instalado, clique se quiser instalar)
 # GenericName=Web Browser

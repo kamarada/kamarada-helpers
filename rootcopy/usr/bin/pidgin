@@ -1,0 +1,10 @@
+#!/bin/bash
+
+NAME="Pidgin"
+DESCRIPTION="Pidgin é um programa de chat que permite a você usar contas de vários serviços de chat ao mesmo tempo.
+
+O Pidgin é compatível com os seguintes serviços de chat: AIM, ICQ, Google Talk, Jabber/XMPP (por exemplo, Facebook), MSN Messenger, Yahoo!, Bonjour, Gadu-Gadu, IRC, Novell GroupWise Messenger, QQ, Lotus Sametime, SILC, SIMPLE, MXit, MySpaceIM e Zephyr. O suporte a mais serviços de chat pode ser adicionado com plugins."
+WEBSITE="http://www.pidgin.im/"
+ONE_CLICK="/usr/share/Kamarada/helpers/pidgin.ymp"
+
+source /usr/share/Kamarada/helpers/common

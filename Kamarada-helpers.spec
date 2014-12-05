@@ -143,6 +143,28 @@ This helper assists installing the Opera Web Browser.
 /usr/share/Kamarada/helpers/opera.ymp
 
 
+%package pidgin
+Summary:        Kamarada helper for installing the Pidgin Internet Messenger
+Group:          Metapackages
+Requires:       Kamarada-helpers
+
+Conflicts:      pidgin
+
+
+%description pidgin
+Kamarada helpers assist users installing softwares that aren't bundled with Kamarada by default, but probably they will look for.
+
+This helper assists installing the Pidgin Internet Messenger.
+
+
+%files pidgin
+%defattr(-,root,root)
+%doc COPYING
+/usr/bin/pidgin
+/usr/share/applications/Kamarada-helpers-pidgin.desktop
+/usr/share/Kamarada/helpers/pidgin.ymp
+
+
 %package thunderbird
 Summary:        Kamarada helper for installing the Mozilla Thunderbird Mail/News Client
 Group:          Metapackages

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metapackage xmlns:os="http://opensuse.org/Standards/One_Click_Install" xmlns="http://opensuse.org/Standards/One_Click_Install">
+  <group distversion="openSUSE 13.2">
+    <name>Pidgin</name>
+    <summary>Internet Messenger</summary>
+    <summary lang="pt_BR">Mensageiro da Internet</summary>
+    <description>Pidgin is a chat program which lets you log in to accounts on multiple chat networks simultaneously.
+
+Pidgin is compatible with the following chat networks out of the box: AIM, ICQ, Google Talk, Jabber/XMPP, MSN Messenger, Yahoo!, Bonjour, Gadu-Gadu, IRC, Novell GroupWise Messenger, QQ, Lotus Sametime, SILC, SIMPLE, MXit, MySpaceIM, and Zephyr. It can support many more with plugins.</description>
+    <description lang="pt_BR">Você deseja executar o Pidgin? No momento, ele não está instalado no seu computador, mas podemos instalá-lo. Observe que sua instalação removerá esse assistente, uma vez que ele não será mais necessário.
+
+Pidgin é um programa de chat que permite a você usar contas de vários serviços de chat ao mesmo tempo.
+
+O Pidgin é compatível com os seguintes serviços de chat: AIM, ICQ, Google Talk, Jabber/XMPP (por exemplo, Facebook), MSN Messenger, Yahoo!, Bonjour, Gadu-Gadu, IRC, Novell GroupWise Messenger, QQ, Lotus Sametime, SILC, SIMPLE, MXit, MySpaceIM e Zephyr. O suporte a mais serviços de chat pode ser adicionado com plugins.
+
+Para mais informações, acesse http://www.pidgin.im/
+
+Deseja proceder à instalação? Se sim, clique em "Próximo". Senão, clique em "Cancelar".</description>
+    <remainSubscribed>true</remainSubscribed>
+    <repositories>
+      <repository recommended="true" format="yast">
+        <name>openSUSE:13.2</name>
+        <summary>Official 13.2 openSUSE distribution</summary>
+	<summary lang="pt_BR">Distribuição oficial do openSUSE 13.2</summary>
+        <description>This project builds the official 13.2 openSUSE distribution.
+
+Have a look at http://en.opensuse.org/Portal:13.2 for more details.</description>
+	<description lang="pt_BR">Distribuição oficial do openSUSE 13.2.
+
+Para mais informações, acesse http://www.opensuse.org/pt-br/</description>
+        <url>http://download.opensuse.org/distribution/13.2/repo/oss/</url>
+      </repository>
+      <repository recommended="true" format="yum">
+        <name>openSUSE:13.2:Update</name>
+        <summary>Online updates for openSUSE 13.2</summary>
+	<summary lang="pt_BR">Atualizações online para o openSUSE 13.2</summary>
+        <description>This project is releasing the official updates for openSUSE 13.2.</description>
+	<description lang="pt_BR">Atualizações oficiais para o openSUSE 13.2</description>
+        <url>http://download.opensuse.org/update/13.2/</url>
+      </repository>
+    </repositories>
+    <software>
+      <item recommended="true">
+	<name>pidgin</name><!-- libpurple -->
+        <summary>Multiprotocol Instant Messaging Client</summary>
+	<summary lang="pt_BR">Cliente de Mensagens Instantâneas Multiprotocolo</summary>
+        <description>Pidgin is a chat program which lets you log in to accounts on multiple chat networks simultaneously.
+
+Pidgin is compatible with the following chat networks out of the box: AIM, ICQ, Google Talk, Jabber/XMPP, MSN Messenger, Yahoo!, Bonjour, Gadu-Gadu, IRC, Novell GroupWise Messenger, QQ, Lotus Sametime, SILC, SIMPLE, MXit, MySpaceIM, and Zephyr. It can support many more with plugins.</description>
+	<description lang="pt_BR">Pidgin é um programa de chat que permite a você usar contas de vários serviços de chat ao mesmo tempo.
+
+O Pidgin é compatível com os seguintes serviços de chat: AIM, ICQ, Google Talk, Jabber/XMPP (por exemplo, Facebook), MSN Messenger, Yahoo!, Bonjour, Gadu-Gadu, IRC, Novell GroupWise Messenger, QQ, Lotus Sametime, SILC, SIMPLE, MXit, MySpaceIM e Zephyr. O suporte a mais serviços de chat pode ser adicionado com plugins.</description>
+      </item>
+      <item recommended="true">
+        <name>libpurple-lang</name>
+	<summary>Languages for package pidgin</summary>
+	<description>Provides translations to the package pidgin</description>
+      </item>
+      <item recommended="true">
+	<name>pidgin-plugin-skype</name><!-- libpurple-plugin-skype -->
+	<summary>Pidgin plugin for Skype API</summary>
+	<description>This is a Skype Plugin for Pidgin/libpurple/Adium. It lets you view and chat with all your Skype buddies from within Pidgin/Adium. You still need Skype to be running to be able to use it, but it lets you keep a consistent user interface and use all the other nifty Pidgin/Adium plugins with it, like spell-checking or OTR encryption.</description>
+      </item>
+      <item recommended="true">
+        <name>libpurple-plugin-skype-lang</name>
+	<summary>Languages for package skype4pidgin</summary>
+	<description>Provides translations to the package skype4pidgin</description>
+      </item>
+      <item recommended="false">
+	<name>pidgin-plugin-pack</name><!-- libpurple-plugin-pack -->
+	<summary>Compilation of plugins for Pidgin</summary>
+	<description>The Purple Plugin Pack is a compilation of plugins for the libpurple family of IM clients. This package provides the Pidgin plugins from the Purple Plugin Pack. To avoid license issues between GPL-3.0+ plugins and other plugins that could be incompatible with GPL-3.0+, the GPL-3.0+ plugins are split in the pidgin-plugin-pack-extras package.</description>
+      </item>
+      <item recommended="false">
+	<name>purple-plugin-pack-lang</name>
+	<summary>Languages for package purple-plugin-pack</summary>
+	<description>Provides translations to the package purple-plugin-pack</description>
+      </item>
+      <item recommended="false">
+	<name>pidgin-plugin-pack-extras</name><!-- libpurple-plugin-pack-extras -->
+	<summary>Compilation of plugins for Pidgin -- GPL-3.0+ Plugins</summary>
+	<description>The Purple Plugin Pack is a compilation of plugins for the libpurple family of IM clients. This package provides the Pidgin plugins from the Purple Plugin Pack. This package contains GPL-3.0+ plugins. Their license might cause incompatibilities with other plugins.</description>
+      </item>
+      <item recommended="false">
+	<name>libpurple-meanwhile</name>
+	<summary>Lotus Sametime Plugin for Pidgin Using the Meanwhile Library</summary>
+	<description>Lotus Sametime plugin for Pidgin using the Meanwhile library.</description>
+      </item>
+      <item recommended="false">
+	<name>libpurple-plugin-bot-sentry</name>
+	<summary>Libpurple plugin to prevent Instant Message spam</summary>
+	<description>Bot Sentry is a libpurple plug-in to prevent Instant Message spam. It allows you to ignore IMs unless the sender is in your Buddy List or Allow List, or the sender correctly answers a question you have predefined.</description>
+      </item>
+      <item recommended="false">
+	<name>libpurple-plugin-bot-sentry-lang</name>
+	<summary>Languages for package bot-sentry</summary>
+	<description>Provides translations to the package bot-sentry</description>
+      </item>
+      <item recommended="false">
+	<name>pidgin-plugin-advanced-sound-notification</name>
+	<summary>Pidgin plugin adding sound notifications</summary>
+	<description>This plugin adds sounds for some sound notifications to pidgin (e.g. "Incoming Filetransfer" or "Authentication requested").</description>
+      </item>
+      <item recommended="false">
+	<name>pidgin-advanced-sound-notification-lang</name>
+	<summary>Languages for package pidgin-advanced-sound-notification</summary>
+	<description>Provides translations to the package pidgin-advanced-sound-notification</description>
+      </item>
+      <item recommended="false">
+	<name>pidgin-plugin-birthday-reminder</name>
+	<summary>Pidgin plugin to remind you of the birthdays of your buddies</summary>
+	<description>Pidgin Birthday Reminder reminds you of your buddies birthdays. Birthdays can be set by hand or be automatically filled-in for ICQ, MSN and XMPP protocols.</description>
+      </item>
+      <item recommended="false">
+	<name>pidgin-birthday-reminder-lang</name>
+	<summary>Languages for package pidgin-birthday-reminder</summary>
+	<description>Provides translations to the package pidgin-birthday-reminder</description>
+      </item>
+      <item recommended="false">
+	<name>pidgin-plugin-embeddedvideo</name>
+	<summary>Pidgin plugin to watch videos directly into your Pidgin conversation</summary>
+	<description>Pidgin Embedded Video is a GTK plugin for the popular instant messaging client Pidgin. The purpose of this plugin is to provide a faster way to watch videos while chatting with your friends. No more additional browser windows! It transforms a simple conversation into a much more attractive and interesting experience.</description>
+      </item>
+      <item recommended="false">
+	<name>pidgin-plugin-guifications</name>
+	<summary>Pidgin plugin to display "toaster" popups</summary>
+	<description>Guifications is a Pidgin plugin that displays "toaster" popups in a user-defined corner of the screen, similar to features that have been added to the official MSN Messenger (now called Windows Live Messenger), Yahoo! Messenger and AOL Instant Messenger clients. It's highly configurable, easy to use, and has theme support. It really is the end-all, be-all toaster pop-up plugin for Pidgin!</description>
+      </item>
+      <item recommended="false">
+	<name>pidgin-guifications-lang</name>
+	<summary>Languages for package pidgin-guifications</summary>
+	<description>Provides translations to the package pidgin-guifications</description>
+      </item>
+      <item recommended="false">
+	<name>libpurple-plugin-mrim</name>
+	<summary>Pidgin plugin for Mail.ru Agent</summary>
+	<description>This is a Mail.ru Agent plugin for Pidgin. It provides support for the MRA/MRIM protocol, popular in ex-USSR.</description>
+      </item>
+      <item recommended="false">
+	<name>libpurple-plugin-mrim-lang</name>
+	<summary>Languages for package pidgin-mrim</summary>
+	<description>Provides translations to the package pidgin-mrim</description>
+      </item>
+      <item recommended="false">
+	<name>pidgin-openfetion</name><!-- libpurple-plugin-openfetion -->
+	<summary>Pidgin plugin for the Fetion protocol</summary>
+	<description>This is a Fetion plugin for Pidgin. Fetion is an IM provided by China Mobile, with features like text chat, voice call, file sharing, etc.</description>
+      </item>
+      <item recommended="false">
+	<name>libpurple-plugin-openfetion-lang</name>
+	<summary>Languages for package pidgin-openfetion</summary>
+	<description>Provides translations to the package pidgin-openfetion</description>
+      </item>
+      <item recommended="false">
+	<name>pidgin-otr</name>
+	<summary>"Off The Record" end-to-end encryption plugin for gaim</summary>
+	<description>This is a gaim plugin which implements Off-the-Record (OTR) Messaging. OTR allows you to have private conversations over IM by providing:
+- Encryption
+- No one else can read your instant messages.
+- Authentication
+- You are assured the correspondent is who you think it is.
+- Deniability
+- The messages you send do _not_ have digital signatures that are checkable by a third party. Anyone can forge messages after a conversation to make them look like they came from you. However, _during_ a conversation, your correspondent is assured the messages he sees are authentic and unmodified.
+- Perfect forward secrecy
+- If you lose control of your private keys, no previous conversation is compromised.</description>
+      </item>
+      <item recommended="false">
+	<name>pidgin-sipe</name><!-- libpurple-plugin-sipe -->
+	<summary>Pidgin protocol plugin to connect to MS Office Communicator</summary>
+	<description>A third-party plugin for the Pidgin multi-protocol instant messenger. It implements the extended version of SIP/SIMPLE used by various products: 
+* Microsoft Office Communications Server (OCS 2007/2007 R2 and newer)
+* Microsoft Live Communications Server (LCS 2003/2005)
+* Reuters Messaging
+With this plugin you should be able to replace your Microsoft Office Communicator client with Pidgin. This package provides the icon set for Pidgin.</description>
+      </item>
+      <item action="remove" recommended="true">
+        <name>Kamarada-helpers-pidgin</name>
+        <summary>Kamarada helper for installing the Pidgin Internet Messenger</summary>
+	<summary lang="pt_BR">Assistente do Kamarada para instalar o Mensageiro da Internet Pidgin</summary>
+        <description>Kamarada helpers assist users installing softwares that aren't bundled with Kamarada by default, but probably they will look for.
+
+This helper assists installing the Pidgin Internet Messenger.</description>
+	<description lang="pt_BR">Os assistentes do Kamarada ajudam os usuários a instalar programas que não são fornecidos com o Kamarada por padrão, mas que provavelmente eles estão à procura.
+
+Esse assistente ajuda a instalar o Mensageiro da Internet Pidgin.</description>
+      </item>
+    </software>
+  </group>
+</metapackage>

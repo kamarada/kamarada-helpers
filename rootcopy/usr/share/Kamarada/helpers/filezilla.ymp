@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metapackage xmlns:os="http://opensuse.org/Standards/One_Click_Install" xmlns="http://opensuse.org/Standards/One_Click_Install">
+  <group distversion="openSUSE 13.2">
+    <name>FileZilla</name>
+    <summary>FTP Client</summary>
+    <summary lang="pt_BR">Cliente de FTP</summary>
+    <description>FileZilla is a modern and powerful FTP client for Windows and Linux. FileZilla development focuses on high usability while also supporting as many useful features as possible. FileZilla is "Open Source" under the GPL license. Some of the main features are: 
+      
+* Continuing interrupted up-/downloads
+* Managing different FTP sites
+* Modifiable Commands
+* Keep-Alive-System
+* Timeout detection
+* Firewall support
+* SOCKS4/5 and HTTP 1.1 proxy support
+* SSL support (secure connections)
+* SFTP support
+* Upload/Download queue
+* Drag &amp; Drop support</description>
+    <description lang="pt_BR">Você deseja executar o FileZilla? No momento, ele não está instalado no seu computador, mas podemos instalá-lo. Observe que sua instalação removerá esse assistente, uma vez que ele não será mais necessário.
+
+O FileZilla é um moderno e poderoso cliente FTP para Windows e Linux. O desenvolvimento do FileZilla é focado na alta facilidade de uso, mas também no suporte à maior quantidade de funcionalidades úteis possível. O FileZilla é código aberto pela licença GPL. Algumas das funcionalidades principais são:
+
+* Continuação de downloads e uploads interrompidos
+* Gerenciamento de diferentes sites via FTP
+* Comandos modificáveis
+* Keep-Alive-System
+* Detecção de timeout
+* Suporte a firewall
+* Suporte a proxy SOCKS4/5 e HTTP 1.1
+* Suporte a SSL (conexões seguras)
+* Suporte a SFTP
+* Fila de downloads e uploads
+* Suporte a arrastar e soltar (drag &amp; drop)
+
+Para mais informações, acesse http://filezilla-project.org/
+
+Deseja proceder à instalação? Se sim, clique em "Próximo". Senão, clique em "Cancelar".</description>
+    <remainSubscribed>true</remainSubscribed>
+    <repositories>
+      <repository recommended="true" format="yast">
+        <name>openSUSE:13.2</name>
+        <summary>Official 13.2 openSUSE distribution</summary>
+	<summary lang="pt_BR">Distribuição oficial do openSUSE 13.2</summary>
+        <description>This project builds the official 13.2 openSUSE distribution.
+
+Have a look at http://en.opensuse.org/Portal:13.2 for more details.</description>
+	<description lang="pt_BR">Distribuição oficial do openSUSE 13.2.
+
+Para mais informações, acesse http://www.opensuse.org/pt-br/</description>
+        <url>http://download.opensuse.org/distribution/13.2/repo/oss/</url>
+      </repository>
+      <repository recommended="true" format="yum">
+        <name>openSUSE:13.2:Update</name>
+        <summary>Online updates for openSUSE 13.2</summary>
+	<summary lang="pt_BR">Atualizações online para o openSUSE 13.2</summary>
+        <description>This project is releasing the official updates for openSUSE 13.2.</description>
+	<description lang="pt_BR">Atualizações oficiais para o openSUSE 13.2</description>
+        <url>http://download.opensuse.org/update/13.2/</url>
+      </repository>
+    </repositories>
+    <software>
+      <item recommended="true">
+        <name>filezilla</name>
+        <summary>A GUI FTP and SFTP Client</summary>
+	<summary lang="pt_BR">Um cliente gráfico de FTP e SFTP</summary>
+        <description>FileZilla is a modern and powerful FTP client for Windows and Linux. FileZilla development focuses on high usability while also supporting as many useful features as possible. FileZilla is "Open Source" under the GPL license. Some of the main features are: 
+      
+* Continuing interrupted up-/downloads
+* Managing different FTP sites
+* Modifiable Commands
+* Keep-Alive-System
+* Timeout detection
+* Firewall support
+* SOCKS4/5 and HTTP 1.1 proxy support
+* SSL support (secure connections)
+* SFTP support
+* Upload/Download queue
+* Drag &amp; Drop support</description>
+	<description lang="pt_BR">O FileZilla é um moderno e poderoso cliente FTP para Windows e Linux. O desenvolvimento do FileZilla é focado na alta facilidade de uso, mas também no suporte à maior quantidade de funcionalidades úteis possível. O FileZilla é código aberto pela licença GPL. Algumas das funcionalidades principais são:
+
+* Continuação de downloads e uploads interrompidos
+* Gerenciamento de diferentes sites via FTP
+* Comandos modificáveis
+* Keep-Alive-System
+* Detecção de timeout
+* Suporte a firewall
+* Suporte a proxy SOCKS4/5 e HTTP 1.1
+* Suporte a SSL (conexões seguras)
+* Suporte a SFTP
+* Fila de downloads e uploads
+* Suporte a arrastar e soltar (drag &amp; drop)</description>
+      </item>
+      <item recommended="true">
+        <name>filezilla-lang</name>
+        <summary>Languages for package filezilla</summary>
+	<summary lang="pt_BR">Traduções para o pacote filezilla</summary>
+        <description>Provides translations to the package filezilla</description>
+	<description lang="pt_BR">Fornece traduções para o pacote filezilla</description>
+      </item>
+      <item action="remove" recommended="true">
+        <name>Kamarada-helpers-filezilla</name>
+        <summary>Kamarada helper for installing the FileZilla FTP Client</summary>
+	<summary lang="pt_BR">Assistente do Kamarada para instalar o Cliente de FTP FileZilla</summary>
+        <description>Kamarada helpers assist users installing softwares that aren't bundled with Kamarada by default, but probably they will look for.
+
+This helper assists installing the FileZilla FTP Client.</description>
+	<description lang="pt_BR">Os assistentes do Kamarada ajudam os usuários a instalar programas que não são fornecidos com o Kamarada por padrão, mas que provavelmente eles estão à procura.
+
+Esse assistente ajuda a instalar o Cliente de FTP FileZilla.</description>
+      </item>
+    </software>
+  </group>
+</metapackage>

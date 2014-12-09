@@ -1,0 +1,12 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Categories=Network;FileTransfer;
+Encoding=UTF-8
+Name=FileZilla FTP Client (not installed yet, click to install it)
+Name[pt_BR]=Cliente de FTP FileZilla (não instalado, clique para instalar)
+TryExec=filezilla
+Exec=filezilla
+Icon=Kamarada_helper
+Terminal=false
+StartupNotify=false
+Type=Application

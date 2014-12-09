@@ -51,8 +51,10 @@ tar -zxvf %{SOURCE1} -C rootcopy
 %install
 cp -R $RPM_BUILD_DIR/rootcopy/* $RPM_BUILD_ROOT
 %suse_update_desktop_file Kamarada-helpers-chromium
+%suse_update_desktop_file Kamarada-helpers-filezilla
 %suse_update_desktop_file Kamarada-helpers-google-chrome
 %suse_update_desktop_file Kamarada-helpers-opera
+%suse_update_desktop_file Kamarada-helpers-pidgin
 %suse_update_desktop_file Kamarada-helpers-thunderbird
 
 
@@ -85,6 +87,28 @@ This helper assists installing the Chromium Web Browser.
 /usr/bin/chromium
 /usr/share/applications/Kamarada-helpers-chromium.desktop
 /usr/share/Kamarada/helpers/chromium.ymp
+
+
+%package filezilla
+Summary:        Kamarada helper for installing the FileZilla FTP Client
+Group:          Metapackages
+Requires:       Kamarada-helpers
+
+Conflicts:      filezilla
+
+
+%description filezilla
+Kamarada helpers assist users installing softwares that aren't bundled with Kamarada by default, but probably they will look for.
+
+This helper assists installing the FileZilla FTP Client.
+
+
+%files filezilla
+%defattr(-,root,root)
+%doc COPYING
+/usr/bin/filezilla
+/usr/share/applications/Kamarada-helpers-filezilla.desktop
+/usr/share/Kamarada/helpers/filezilla.ymp
 
 
 %package google-chrome

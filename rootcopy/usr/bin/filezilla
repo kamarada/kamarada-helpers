@@ -1,0 +1,20 @@
+#!/bin/bash
+
+NAME="FileZilla"
+DESCRIPTION="O FileZilla é um moderno e poderoso cliente FTP para Windows e Linux. O desenvolvimento do FileZilla é focado na alta facilidade de uso, mas também no suporte à maior quantidade de funcionalidades úteis possível. O FileZilla é código aberto pela licença GPL. Algumas das funcionalidades principais são:
+
+* Continuação de downloads e uploads interrompidos
+* Gerenciamento de diferentes sites via FTP
+* Comandos modificáveis
+* Keep-Alive-System
+* Detecção de timeout
+* Suporte a firewall
+* Suporte a proxy SOCKS4/5 e HTTP 1.1
+* Suporte a SSL (conexões seguras)
+* Suporte a SFTP
+* Fila de downloads e uploads
+* Suporte a arrastar e soltar (drag & drop)"
+WEBSITE="http://filezilla-project.org/"
+ONE_CLICK="/usr/share/Kamarada/helpers/filezilla.ymp"
+
+source /usr/share/Kamarada/helpers/common
